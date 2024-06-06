@@ -61,6 +61,9 @@ extension ViewController: UITableViewDelegate {
         case "TableView":
             let controller = self.storyboard?.instantiateViewController(withIdentifier: TableController.toString) as! TableController
             show(controller, sender: nil)
+        case "CollectionView":
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: CollectionController.toString) as! CollectionController
+            show(controller, sender: nil)
         default:
             break
         }

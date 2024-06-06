@@ -13,15 +13,14 @@ class TableController: UIViewController {
     
     /// Properties
     private lazy var datasource = makeDatasource()
-    private var tableList = [String]()
+    private var viewmodel: ViewModel?
     
     /// Intialise Controller
     override func viewDidLoad() {
         super.viewDidLoad()
         // screen title
         title = "TableView"
-        // load list from plist
-        tableList = Common.loadFromPlist(from: .table)
+        viewmodel = ViewModel()
         // setup tableview
         tableview.registerCell(with: "MainTableCell")
         tableview.dataSource = datasource
@@ -47,7 +46,7 @@ class TableController: UIViewController {
     func applySnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<MySection, String>()
         snapshot.appendSections([.items])
-        snapshot.appendItems(tableList, toSection: .items)
+        snapshot.appendItems(viewmodel?.fetchList() ?? [], toSection: .items)
         datasource.apply(snapshot)
     }
 }

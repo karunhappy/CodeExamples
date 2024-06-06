@@ -12,7 +12,7 @@ class MainTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        let cell = UIListContentConfiguration.cell()
+        _ = UIListContentConfiguration.cell()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

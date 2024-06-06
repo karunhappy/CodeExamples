@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF2B2FCD2C1179340083804C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B2FCC2C1179340083804C /* ViewModel.swift */; };
+		EF2B2FD12C117C390083804C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2B2FD02C117C390083804C /* CollectionViewCell.xib */; };
+		EF2B2FD22C117C390083804C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B2FCF2C117C390083804C /* CollectionViewCell.swift */; };
 		EFE621042BD38ACC008D847F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE621032BD38ACC008D847F /* AppDelegate.swift */; };
 		EFE621062BD38ACC008D847F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE621052BD38ACC008D847F /* SceneDelegate.swift */; };
 		EFE621082BD38ACC008D847F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE621072BD38ACC008D847F /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF2B2FCC2C1179340083804C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EF2B2FCF2C117C390083804C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EF2B2FD02C117C390083804C /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		EFE621002BD38ACC008D847F /* KHProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE621032BD38ACC008D847F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE621052BD38ACC008D847F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF2B2FCB2C1179170083804C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B2FCC2C1179340083804C /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF2B2FCE2C117C1F0083804C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B2FCF2C117C390083804C /* CollectionViewCell.swift */,
+				EF2B2FD02C117C390083804C /* CollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		EFE620F72BD38ACC008D847F = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +97,7 @@
 		EFE621022BD38ACC008D847F /* KHProjects */ = {
 			isa = PBXGroup;
 			children = (
+				EF2B2FCB2C1179170083804C /* ViewModel */,
 				EFE621312BD3983B008D847F /* Controllers */,
 				EFE621032BD38ACC008D847F /* AppDelegate.swift */,
 				EFE621052BD38ACC008D847F /* SceneDelegate.swift */,
@@ -153,6 +177,7 @@
 		EFE621362BD39F47008D847F /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				EF2B2FCE2C117C1F0083804C /* Cell */,
 				EFE621392BD39FBA008D847F /* CollectionController.swift */,
 			);
 			path = CollectionView;
@@ -217,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE621102BD38ACD008D847F /* LaunchScreen.storyboard in Resources */,
+				EF2B2FD12C117C390083804C /* CollectionViewCell.xib in Resources */,
 				EFE6212E2BD39267008D847F /* MainList.plist in Resources */,
 				EFE6210D2BD38ACD008D847F /* Assets.xcassets in Resources */,
 				EFE6210B2BD38ACC008D847F /* Main.storyboard in Resources */,
@@ -232,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B2FCD2C1179340083804C /* ViewModel.swift in Sources */,
 				EFE621272BD3904C008D847F /* String+Extension.swift in Sources */,
 				EFE621082BD38ACC008D847F /* ViewController.swift in Sources */,
 				EFE621042BD38ACC008D847F /* AppDelegate.swift in Sources */,
@@ -241,6 +268,7 @@
 				EFE621292BD3904C008D847F /* CellView+Extension.swift in Sources */,
 				EFE6211B2BD38C16008D847F /* MainTableCell.swift in Sources */,
 				EFE621302BD39370008D847F /* Common.swift in Sources */,
+				EF2B2FD22C117C390083804C /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
